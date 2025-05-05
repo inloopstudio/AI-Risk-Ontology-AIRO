@@ -60,6 +60,12 @@ Visit `http://localhost:4567`, fill out the form, and get your AI Risk Report in
 
 ---
 
+### 3. Replit Deployment
+
+The app is avaible to remix at https://replit.com/@inloop/AI-Risk-Ontology-AIRO 
+
+---
+
 ## Output Formats
 
 ### Markdown
