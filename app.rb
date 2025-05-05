@@ -4,8 +4,8 @@ require 'rdf'
 require 'rdf/turtle'
 require_relative './ai_risk_assessment'
 
-set :bind, '0.0.0.0'
-set :port, 4567
+
+set :host_authorization, { permitted_hosts: [] }
 
 get '/' do
   @allowed = ALLOWED_VALUES

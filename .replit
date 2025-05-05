@@ -1,0 +1,12 @@
+modules = ["ruby-3.3", "web"]
+run = "bundle exec ruby app.rb -o 0.0.0.0 -p 3000"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "bundle exec ruby app.rb -o 0.0.0.0 -p 3000"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
