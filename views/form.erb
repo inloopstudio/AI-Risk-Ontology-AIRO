@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Risk Assessment</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: auto; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    select, button { width: 100%; padding: 10px; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong><h1>AI Risk Assessment</h1></strong></div>
+<div style="margin-bottom: 18px;">
+  <p>
+    This tool evaluates the risk of an AI system using principles from the AIRO Ontology. It collects AI risk inputs via a structured questionnaire, applies heuristic risk scoring logic, and outputs results as a human-readable Markdown report and RDF/Turtle data for linked data applications. Available as both a web app and CLI tool.
+  </p>
+</div>
+  </header>
+  <form action="/submit" method="post">
+    <% @allowed.each do |key, values| %>
+      <label><%= key.to_s.capitalize %></label>
+      <select name="<%= key %>" required>
+        <% values.each do |v| %>
+          <option value="<%= v %>"><%= v %></option>
+        <% end %>
+      </select>
+    <% end %>
+    <br>
+    <button type="submit">Submit Assessment</button>
+  </form>
+  <footer style="margin-top: 40px; padding: 16px 0; border-top: 1px solid #ccc; text-align: center; font-size: 0.95em; color: #555;">
+
+    <div>
+      <a href="https://github.com/inloopstudio/AI-Risk-Ontology-AIRO" target="_blank">GitHub Project</a> &mdash; Sponsored by <a href="https://inloop.studio/?utm_source=ai-risk-tool&utm_medium=web&utm_campaign=footer-link" target="_blank">inloop.studio</a>
+    </div>
+    <div><small style="color: #888;">This is an experimental project.</small></div>
+  </footer>
+</body>
+</html>

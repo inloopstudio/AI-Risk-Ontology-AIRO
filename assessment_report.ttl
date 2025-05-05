@@ -1,0 +1,9 @@
+
+<http://example.org/ai_system/1> a <http://example.org/airo#AISystem>;
+  <http://example.org/airo#hasCapability> "Biometric Identification";
+  <http://example.org/airo#hasDeployer> "Government Agency";
+  <http://example.org/airo#hasDomain> "Law Enforcement";
+  <http://example.org/airo#hasPurpose> "Recruitment";
+  <http://example.org/airo#hasRiskLevel> "MEDIUM";
+  <http://example.org/airo#hasSubject> "Employees";
+  <http://example.org/airo#hasTotalRiskScore> 11 .
