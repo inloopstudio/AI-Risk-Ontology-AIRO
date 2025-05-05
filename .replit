@@ -6,6 +6,7 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "bundle exec ruby app.rb -o 0.0.0.0 -p 3000"]
+deploymentTarget = "cloudrun"
 
 [[ports]]
 localPort = 3000
